@@ -1,0 +1,22 @@
+.sidebar {
+    background-color: rgba(80, 141, 222);
+    color: white;
+    padding: 10px;
+
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows: 10% 30px 30px 30px;
+    grid-row-gap: 10px;
+    
+    justify-content: center;
+    justify-items: left;
+    
+    align-items: center;
+
+    font-size: 1.6rem;
+}
+
+.iconPlus {
+    width: 20px;
+    height: 20px;
+}

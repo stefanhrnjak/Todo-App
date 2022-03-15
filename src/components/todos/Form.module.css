@@ -1,0 +1,46 @@
+.addTodo {
+    display: grid;
+
+    grid-template-rows: 300px 100px 100%;
+    grid-template-columns: 100vw;
+
+    justify-items: center;
+
+    align-content: top;
+}
+
+.addTodo ul {
+    list-style: none;
+}
+
+.addTodo section {
+    justify-self: start;
+    width: 100%;
+}
+
+.btn {
+    display: block;
+    margin: 10px auto;
+}
+
+.background {
+    background-image: url("../../img/cat.jpg");
+    background-size: cover;
+    background-position: center;
+
+    width: 100%;
+    align-content: center;
+
+    display: grid;
+    grid-template-rows: max-content;
+    grid-template-columns: max-content;
+
+    justify-content: center;
+    align-content: end;
+}
+
+.background h2 {
+    font-size: 4rem;
+    margin: 1.5rem;
+    color: white;
+}

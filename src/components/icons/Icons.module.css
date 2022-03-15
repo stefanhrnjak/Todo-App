@@ -1,0 +1,12 @@
+.iconBox {
+  height: 25px;
+  background-color: transparent;
+  fill: white;
+  margin-right: 10px;
+}
+
+.iconPlus {
+  height: 3rem;
+  fill: red;
+  transform: translateY(0.2rem) rotate(45deg);
+}

@@ -1,0 +1,25 @@
+.button {
+  background-color: transparent;
+  border: none;
+  outline: none;
+  font-family: inherit;
+  color: inherit;
+  font-size: inherit;
+
+  display: grid;
+  grid-template-columns: max-content max-content;
+  grid-template-rows: max-content;
+
+  align-items: center;
+
+  transition: transform .3s;
+}
+
+.button:hover {
+  cursor: pointer;
+  transform: translateX(3px);
+}
+
+.button:active {
+  transform: translateX(0);
+}
