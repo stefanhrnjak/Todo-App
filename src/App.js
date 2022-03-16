@@ -10,6 +10,7 @@ function App() {
   const input = useRef();
   const [todoList, setTodoList] = useState([]);
   const [render, setRender] = useState(<div>hello</div>);
+  const [hideSidebar, setHideSidebar] = useState(false);
 
   // Adds item to todoList
   function submitHandler(event) {
@@ -30,20 +31,28 @@ function App() {
     input.current.value = "";
   }
 
-  useEffect(() => {
-    setRender(
-      <Form onSubmitHandler={submitHandler} reference={input} list={todoList} onRemoveItem={removeItem}/>
+  function returnForm() {
+    return (
+      <Form
+        onSubmitHandler={submitHandler}
+        reference={input}
+        list={todoList}
+        onRemoveItem={removeItem}
+        onHideSidebar={setHideSidebar}
+      />
     );
+  }
+
+  useEffect(() => {
+    setRender(returnForm());
   }, [todoList]);
 
   function removeItem(idValue) {
-    setTodoList(todoList.filter((todo) => todo.id !== idValue))
+    setTodoList(todoList.filter((todo) => todo.id !== idValue));
   }
 
   function renderAddTodo() {
-    setRender(
-      <Form onSubmitHandler={submitHandler} reference={input} list={todoList} onRemoveItem={removeItem}/>
-    );
+    setRender(returnForm());
   }
 
   function renderAbout() {
@@ -52,7 +61,11 @@ function App() {
 
   return (
     <Card>
-      <Sidebar onRenderAddTodo={renderAddTodo} onRenderAbout={renderAbout} />
+      <Sidebar
+        onRenderAddTodo={renderAddTodo}
+        onRenderAbout={renderAbout}
+        hideSidebar={hideSidebar}
+      />
       <Main onRender={render} />
     </Card>
   );

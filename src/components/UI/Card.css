@@ -3,7 +3,7 @@
 .card {
     display: grid;
     grid-template-rows: 100vh;
-    grid-template-columns: 10vw 90vw;
+    grid-template-columns: min-content 1fr;
 
     font-family: 'Montserrat', sans-serif;
 }

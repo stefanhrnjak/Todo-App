@@ -2,11 +2,9 @@
   display: grid;
 
   grid-template-rows: 30vh max-content max-content;
-  grid-template-columns: 100%;
+  grid-template-columns: 1fr;
 
   justify-items: center;
-
-  align-content: top;
 }
 
 .addTodo ul {
@@ -16,7 +14,6 @@
 
 .addTodo section {
   justify-self: start;
-
 }
 
 .btn {
@@ -28,7 +25,7 @@
   background-image: url("../../img/cat.jpg");
   background-size: cover;
   background-position: center;
-width: 100%;
+  width: 100%;
 
   border-bottom-left-radius: 10px;
   border-bottom-right-radius: 10px;
@@ -36,20 +33,35 @@ width: 100%;
   align-content: center;
 
   display: grid;
-  grid-template-rows: max-content;
-  grid-template-columns: max-content;
+  grid-template-rows: max-content max-content;
+  grid-template-columns: 100%;
 
   justify-content: center;
-  align-content: end;
+  align-content: space-between;
+
+  transition: 1s;
 }
 
 .background h2 {
   font-size: 4rem;
   margin: 1.5rem;
   color: white;
+  justify-self: center;
 }
 
 form {
   background-color: gray;
   justify-self: center;
+  margin-top: 1rem;
+}
+
+.hideBtn {
+  justify-self: start;
+  padding: 0.5rem 0.7rem;
+  width: max-content;
+  border: none;
+  margin-top: 1rem;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  background-color: rgba(80, 141, 222);
 }

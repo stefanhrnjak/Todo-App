@@ -22,8 +22,8 @@ export default function Sidebar(props) {
 
   return (
     <>
-      <section className={classes.sidebar}>
-        <div>Todo App</div>
+      <section className={classes.sidebar} style={props.hideSidebar ? {width: '0'} : {width: '10vw'}}>
+        <div className={classes.title}>Todo App</div>
         <HighlightTask onHighlight={highlight}>
           {(prop) => (
             <Button onClick={renderAddTodoExit}>

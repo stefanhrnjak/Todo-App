@@ -1,13 +1,33 @@
-import React from "react";
+import React, { useState } from "react";
 
 import classes from "./Form.module.css";
 import TodoItem from "./TodoItem";
 import Fadable from "./Fadable";
+import IconChevron from "../icons/IconChevron";
 
 export default function Form(props) {
+  const [rotate, setRotate] = useState(false);
+
+  function hideSidebar() {
+    setRotate((current) => !current)
+    props.onHideSidebar((current) => !current)
+  }
+
   return (
     <div className={classes.addTodo}>
       <div className={classes.background}>
+        <button
+          className={classes.hideBtn}
+          onClick={hideSidebar}
+        >
+          <IconChevron
+            style={
+              rotate
+                ? { transform: "rotate(180deg" }
+                : { transform: "rotate(0deg)" }
+            }
+          />
+        </button>
         <h2>What's up?</h2>
       </div>
 
@@ -21,7 +41,11 @@ export default function Form(props) {
       <section>
         <ul>
           {props.list.map((todo) => (
-            <Fadable key={todo.id} timeout={300} onFinishFadeout={() => props.onRemoveItem(todo.id)}>
+            <Fadable
+              key={todo.id}
+              timeout={300}
+              onFinishFadeout={() => props.onRemoveItem(todo.id)}
+            >
               {(prop) => (
                 <TodoItem
                   item={todo}
