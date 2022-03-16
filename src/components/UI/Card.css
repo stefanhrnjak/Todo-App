@@ -2,8 +2,8 @@
 
 .card {
     display: grid;
-    grid-template-rows: 95vh;
-    grid-template-columns: 150px auto;
+    grid-template-rows: 100vh;
+    grid-template-columns: 10vw 90vw;
 
     font-family: 'Montserrat', sans-serif;
 }

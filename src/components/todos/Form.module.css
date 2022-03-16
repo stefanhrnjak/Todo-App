@@ -1,46 +1,55 @@
 .addTodo {
-    display: grid;
+  display: grid;
 
-    grid-template-rows: 300px 100px 100%;
-    grid-template-columns: 100vw;
+  grid-template-rows: 30vh max-content max-content;
+  grid-template-columns: 100%;
 
-    justify-items: center;
+  justify-items: center;
 
-    align-content: top;
+  align-content: top;
 }
 
 .addTodo ul {
-    list-style: none;
+  list-style: none;
+  width: 100%;
 }
 
 .addTodo section {
-    justify-self: start;
-    width: 100%;
+  justify-self: start;
+
 }
 
 .btn {
-    display: block;
-    margin: 10px auto;
+  display: block;
+  margin: 10px auto;
 }
 
 .background {
-    background-image: url("../../img/cat.jpg");
-    background-size: cover;
-    background-position: center;
+  background-image: url("../../img/cat.jpg");
+  background-size: cover;
+  background-position: center;
+width: 100%;
 
-    width: 100%;
-    align-content: center;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 
-    display: grid;
-    grid-template-rows: max-content;
-    grid-template-columns: max-content;
+  align-content: center;
 
-    justify-content: center;
-    align-content: end;
+  display: grid;
+  grid-template-rows: max-content;
+  grid-template-columns: max-content;
+
+  justify-content: center;
+  align-content: end;
 }
 
 .background h2 {
-    font-size: 4rem;
-    margin: 1.5rem;
-    color: white;
+  font-size: 4rem;
+  margin: 1.5rem;
+  color: white;
+}
+
+form {
+  background-color: gray;
+  justify-self: center;
 }

@@ -6,13 +6,17 @@
   color: inherit;
   font-size: inherit;
 
+
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+
   display: grid;
-  grid-template-columns: max-content max-content;
+  grid-template-columns: 1fr 3fr;
   grid-template-rows: max-content;
 
   align-items: center;
 
-  transition: transform .3s;
+  transition: all .3s;
 }
 
 .button:hover {
