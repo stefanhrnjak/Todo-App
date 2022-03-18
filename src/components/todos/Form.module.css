@@ -16,19 +16,14 @@
   justify-self: start;
 }
 
-.btn {
-  display: block;
-  margin: 10px auto;
-}
-
 .background {
-  background-image: url("../../img/cat.jpg");
+  background-image: url("../../img/table.jpg");
   background-size: cover;
   background-position: center;
   width: 100%;
 
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 2rem;
+  border-bottom-right-radius: 2rem;
 
   align-content: center;
 
@@ -50,9 +45,58 @@
 }
 
 form {
-  background-color: gray;
-  justify-self: center;
+  width: 100%;
   margin-top: 1rem;
+  display: grid;
+
+  grid-template-rows: max-content;
+
+  grid-row-gap: 1rem;
+}
+
+input {
+  display: block;
+  width: 25%;
+  margin: auto;
+  border: none;
+  border-bottom: 2px solid rgb(121, 182, 242);
+  font-size: 2rem;
+  padding: 1rem 2rem;
+  border-radius: 4px;
+  background-color: transparent;
+  color:rgb(77, 77, 77)
+}
+
+input::placeholder {
+  color: rgb(121, 182, 242);
+  font-size: 2rem;
+}
+
+input:focus {
+  outline: none;
+}
+
+.formBtn {
+  background-color: rgba(80, 141, 222);
+  border: none;
+  font-size: 1.3rem;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 10rem;
+  width: max-content;
+
+  justify-self: center;
+
+  transition: .2s;
+}
+
+.formBtn:hover {
+  background-color: rgb(140, 175, 221);
+  border: none;
+}
+
+.formBtn:active {
+  background-color: blue;
 }
 
 .hideBtn {
@@ -65,3 +109,5 @@ form {
   border-bottom-right-radius: 5px;
   background-color: rgba(80, 141, 222);
 }
+
+

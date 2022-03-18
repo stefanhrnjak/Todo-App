@@ -7,7 +7,7 @@
 
 .iconPlus {
   height: 3rem;
-  fill: red;
+  fill: rgb(62, 36, 143);
   transform: translateY(0.2rem) rotate(45deg);
 }
 
@@ -16,4 +16,17 @@
   fill: white;
   background-color: transparent;
   transition: all 1s;
+}
+
+.profile {
+  display: block;
+  justify-self: center;
+
+  height: 100%;
+}
+
+.tree {
+  justify-self: end;
+  height: 100%;
+  width: auto;
 }

@@ -11,6 +11,11 @@
   align-items: center;
 }
 
+.text {
+  color: rgb(77, 77, 77);
+  font-size: 1.8rem;
+}
+
 .btn {
   border: none;
   background-color: transparent;

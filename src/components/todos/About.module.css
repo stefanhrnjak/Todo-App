@@ -1,0 +1,36 @@
+.aboutContainer {
+  display: grid;
+
+  grid-template-rows: 30vh 20vh max-content;
+  grid-template-columns: 1fr;
+  
+  grid-row-gap: 5rem;
+}
+
+.head {
+  background-color: #5b48b6;
+  border-bottom-right-radius: 2rem;
+  border-bottom-left-radius: 2rem;
+
+  display: grid;
+
+  grid-template-rows: max-content 60% max-content;
+  grid-template-columns: max-content;
+
+  align-content: space-between;
+}
+
+.head h2 {
+  margin: 3rem;
+  margin-top: 0;
+
+  font-size: 4rem;
+  color: white;
+}
+
+.text {
+  display: block;
+  font-family: 'Montserrat' sans-serif;
+  font-size: 1.8rem;
+  margin: auto;
+}

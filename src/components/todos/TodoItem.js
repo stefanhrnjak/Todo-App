@@ -11,7 +11,7 @@ export default function TodoItem(props) {
         <IconPlus />
       </button>
 
-      <span>{props.item.text}</span>
+      <span className={classes.text}>{props.item.text}</span>
     </>
   );
 }

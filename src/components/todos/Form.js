@@ -1,40 +1,36 @@
-import React, { useState } from "react";
+import React from "react";
 
 import classes from "./Form.module.css";
 import TodoItem from "./TodoItem";
 import Fadable from "./Fadable";
-import IconChevron from "../icons/IconChevron";
+import HideBtn from "../UI/HideBtn";
 
 export default function Form(props) {
-  const [rotate, setRotate] = useState(false);
 
-  function hideSidebar() {
-    setRotate((current) => !current)
-    props.onHideSidebar((current) => !current)
+  function onHideSidebarHandler() {
+    props.onHideSidebar('form')
   }
 
   return (
     <div className={classes.addTodo}>
       <div className={classes.background}>
-        <button
-          className={classes.hideBtn}
-          onClick={hideSidebar}
-        >
-          <IconChevron
-            style={
-              rotate
-                ? { transform: "rotate(180deg" }
-                : { transform: "rotate(0deg)" }
-            }
-          />
-        </button>
+        <HideBtn
+          onClick={onHideSidebarHandler}
+          rotate={props.rotate}
+        ></HideBtn>
+
         <h2>What's up?</h2>
       </div>
 
       <form onSubmit={props.onSubmitHandler}>
-        <input id="todo-input" type="text" ref={props.reference}></input>
-        <button className={classes.btn} type="submit">
-          Add Todo
+        <input
+          placeholder="Go for a run..."
+          id="todo-input"
+          type="text"
+          ref={props.reference}
+        ></input>
+        <button className={classes.formBtn} type="submit">
+          Add +
         </button>
       </form>
 
