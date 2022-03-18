@@ -23,6 +23,12 @@
   transition: all .3s;
 }
 
+@media (max-width: 600px) {
+  .button {
+    font-size: 1.5rem;
+  }
+}
+
 .button:hover {
   cursor: pointer;
   transform: translateX(3px);

@@ -5,6 +5,13 @@
   margin-right: 1rem;
 }
 
+@media (max-width: 600px) {
+  .iconBox {
+    height: 2.1rem;
+    margin-right: .5rem;
+  }
+}
+
 .iconPlus {
   height: 3rem;
   fill: rgb(62, 36, 143);

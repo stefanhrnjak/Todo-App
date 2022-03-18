@@ -1,27 +1,60 @@
 .sidebar {
-    background-color: rgba(80, 141, 222);
-    color: white;
+  background-color: rgba(80, 141, 222);
+  color: white;
+  box-sizing: border-box;
 
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 10% 30px 30px 30px;
-    grid-row-gap: 1.5rem;
-    
-    justify-content: space-around;
-    justify-items: left;
-    
-    align-items: center;
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-template-rows: 10% max-content max-content max-content;
 
-    font-size: 1.6rem;
+  justify-items: space-around;
+  align-items: center;
 
-    transition: width 1s;
+  font-size: 1.6rem;
+
+  width: 10vw;
+
+  transition: width 1s;
 }
 
+
+@media (max-width: 1350px) {
+    .sidebar{width: 15vw}
+}
+
+@media (max-width: 950px) {
+    .sidebar{width: 20vw}
+}
+
+@media (max-width: 700px) {
+    .sidebar{width: 25vw}
+}
+
+.sidebarHide {
+    background-color: rgba(80, 141, 222);
+    color: white;
+    box-sizing: border-box;
+  
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% max-content max-content max-content;
+  
+    justify-items: space-around;
+    align-items: center;
+  
+    font-size: 1.6rem;
+  
+    width: 0;
+  
+    transition: width 1s;
+  }
+
 .iconPlus {
-    width: 20px;
-    height: 20px;
+  width: 20px;
+  height: 20px;
 }
 
 .title {
-    padding: 1rem;
+  padding: 1rem;
+  width: minmax(0)
 }

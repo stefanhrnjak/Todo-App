@@ -8,15 +8,6 @@
     font-family: 'Montserrat', sans-serif;
 }
 
-*,
-*::after,
-*::before {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit; /*will inherit from parent, remember that *{} is weakest*/
-    /*we do this so plugins work better*/
-}
-
 html {
     font-size: 62.5%; /*1 rem = 10px; 10px/16px = 62.5%  -  root font size "rem" has been altered */
 }
