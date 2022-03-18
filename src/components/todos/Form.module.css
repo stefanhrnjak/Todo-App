@@ -96,7 +96,7 @@ input:focus {
 }
 
 .formBtn:active {
-  background-color: blue;
+  background-color: rgb(160, 139, 230);
 }
 
 .hideBtn {
