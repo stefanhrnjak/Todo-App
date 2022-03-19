@@ -7,6 +7,12 @@
   justify-items: center;
 }
 
+@media (max-width: 500px) {
+  .addTodo {
+    grid-template-rows: 20vh max-content max-content;
+  }
+}
+
 .addTodo ul {
   list-style: none;
   width: 100%;
@@ -44,6 +50,18 @@
   justify-self: center;
 }
 
+@media (max-width: 700px) {
+  .background h2 {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 500px) {
+  .background h2 {
+    font-size: 2rem;
+  }
+}
+
 form {
   width: 100%;
   margin-top: 1rem;
@@ -64,7 +82,7 @@ input {
   padding: 1rem 2rem;
   border-radius: 4px;
   background-color: transparent;
-  color:rgb(77, 77, 77)
+  color: rgb(77, 77, 77);
 }
 
 input::placeholder {
@@ -74,6 +92,24 @@ input::placeholder {
 
 input:focus {
   outline: none;
+}
+
+@media (max-width: 1350px) {
+  input {
+    width: 40%;
+    padding: .5rem 1rem;
+  }
+}
+
+@media (max-width: 700px) {
+  input {
+    width: 60%;
+    font-size: 1.5rem;
+  }
+
+  input::placeholder {
+    font-size: 1.5rem;
+  }
 }
 
 .formBtn {
@@ -87,7 +123,7 @@ input:focus {
 
   justify-self: center;
 
-  transition: .2s;
+  transition: 0.2s;
 }
 
 .formBtn:hover {
@@ -109,5 +145,3 @@ input:focus {
   border-bottom-right-radius: 5px;
   background-color: rgba(80, 141, 222);
 }
-
-

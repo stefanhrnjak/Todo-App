@@ -30,6 +30,10 @@
     .sidebar{width: 25vw}
 }
 
+@media (max-width: 330px) {
+  .sidebar{width: 30vw}
+}
+
 .sidebarHide {
     background-color: rgba(80, 141, 222);
     color: white;

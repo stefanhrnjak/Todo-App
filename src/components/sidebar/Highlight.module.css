@@ -10,3 +10,17 @@
 
     justify-content: space-around;
 }
+
+@media (max-width: 600px) {
+    .background {
+        margin: .8rem;
+        margin-bottom: 0;
+    }
+  }
+
+  @media (max-width: 450px) {
+    .background {
+        margin: .5rem;
+        margin-bottom: 0;
+    }
+  }

@@ -8,7 +8,14 @@
 @media (max-width: 600px) {
   .iconBox {
     height: 2.1rem;
-    margin-right: .5rem;
+    margin-right: .1rem;
+  }
+}
+
+@media (max-width: 450px) {
+  .iconBox {
+    height: 1.8rem;
+    margin-right: .1rem;
   }
 }
 
