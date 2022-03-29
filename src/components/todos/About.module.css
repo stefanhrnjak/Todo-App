@@ -36,6 +36,16 @@
   margin: 0 5rem;
 }
 
+@media (max-width: 700px) {
+  .text {
+      font-size: 1.5rem;
+  }
+
+  .head h2 {
+    font-size: 3rem;
+}
+}
+
 .github {
   display: grid;
 
