@@ -22,10 +22,10 @@ export default function About(props) {
       <Profile />
 
       <p className={classes.text}>
-        This is a To-Do Application built with React Native for the purpose of
+        This is a To-Do Application built with React for the purpose of
         displaying my front end knowledge.
       </p>
-      <div className={classes.github}><a href="https://github.com/stefanhrnjak">github.com/stefanhrnjak</a></div>
+      {/* <div className={classes.github}><a href="https://github.com/stefanhrnjak">github.com/stefanhrnjak</a></div> */}
       
     </div>
   );
