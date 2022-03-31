@@ -4,6 +4,8 @@ import classes from "./TodoItem.module.css";
 
 import IconPlus from "../icons/IconPlus";
 
+// Outputs each individual list item
+
 export default function TodoItem(props) {
   return (
     <>

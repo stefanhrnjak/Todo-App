@@ -5,8 +5,9 @@ import TodoItem from "./TodoItem";
 import Fadable from "./Fadable";
 import HideBtn from "../UI/HideBtn";
 
-export default function Form(props) {
+// The tasks page as a component
 
+export default function Form(props) {
   function onHideSidebarHandler() {
     props.onHideSidebar('form')
   }

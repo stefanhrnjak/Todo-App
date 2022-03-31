@@ -2,6 +2,8 @@ import React, { useState } from "react";
 
 import classes from "./TodoItem.module.css";
 
+// Fades in and out todo list items on page when added/removed
+
 export default function Fadable(props) {
   const [fadeOut, setFadeOut] = useState(false);
 

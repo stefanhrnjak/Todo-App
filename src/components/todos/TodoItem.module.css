@@ -1,11 +1,10 @@
 .li {
   font-size: 2rem;
   margin: 1rem;
-  width: 100%;
   display: grid;
   
-  grid-template-columns: max-content max-content;
-  grid-template-rows: 4rem;
+  grid-template-columns: minmax(3rem,5%) 90%;
+  grid-template-rows: max-content;
 
   justify-content: start;
   align-items: center;

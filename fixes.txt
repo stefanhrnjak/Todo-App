@@ -1,0 +1,5 @@
+FIX FOR:
+opensslErrorStack: [ 'error:03000086:digital envelope routines::initialization error' ],
+
+CLI command:
+export NODE_OPTIONS=--openssl-legacy-provider

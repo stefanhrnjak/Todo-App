@@ -7,9 +7,12 @@ import IconAbout from "../icons/IconAbout";
 import HighlightTask from "./HighlightTask";
 import HighlightAbout from "./HighlightAbout";
 
+// The sidebar
+
 export default function Sidebar(props) {
   const [highlight, setHighlight] = useState(true);
 
+  // Changes highlighted button on sidebar when clicked
   function renderAddTodoExit() {
     setHighlight(true);
     props.onRenderAddTodo();
@@ -19,8 +22,6 @@ export default function Sidebar(props) {
     setHighlight(false);
     props.onRenderAbout();
   }
-
-  // <section className={classes.sidebar} style={props.hideSidebar ? {width: '0'} : {width: '10vw'}}>
 
   return (
     <>

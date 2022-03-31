@@ -2,7 +2,7 @@
   display: grid;
 
   grid-template-rows: 30vh max-content max-content;
-  grid-template-columns: 1fr;
+  grid-template-columns: minmax(min-content, 1fr);
 
   justify-items: center;
 }
@@ -15,11 +15,12 @@
 
 .addTodo ul {
   list-style: none;
-  width: 100%;
 }
 
 .addTodo section {
+  display: block;
   justify-self: start;
+  width: 100%;
 }
 
 .background {

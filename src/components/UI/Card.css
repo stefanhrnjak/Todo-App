@@ -2,7 +2,7 @@
 
 .card {
     display: grid;
-    grid-template-rows: 100vh;
+    grid-template-rows: minmax(100vh,100%);
     grid-template-columns: min-content 1fr;
 
     font-family: 'Montserrat', sans-serif;

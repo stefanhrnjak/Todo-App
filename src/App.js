@@ -17,7 +17,7 @@ function App() {
   // Adds item to todoList
   function submitHandler(event) {
     event.preventDefault();
-    setId('form');
+    setId('form'); // When re-rendering page, necessary to know from which page the hide/show button was clicked
     const enteredTodo = input.current.value.trim();
 
     if (enteredTodo.length === 0) return;
@@ -34,6 +34,7 @@ function App() {
     input.current.value = "";
   }
 
+  // Form component which is everything but the sidebar on the tasks page
   function returnForm() {
     return (
       <Form
@@ -47,15 +48,18 @@ function App() {
     );
   }
 
+  // About component page
   function returnAbout() {
     return (<About rotate={rotate} onHideSidebar={hideSidebarHandler} />)
   }
 
+  // Re-render current page (whatever 'id' is) when todoList is updated or hide/show button is pressed (rotate)
   useEffect(() => {
     if (id === 'form') {renderAddTodo();} else {renderAbout()}
     
   }, [todoList, rotate]);
 
+  // Remove item function. Removing items can only happen when on tasks page
   function removeItem(idValue) {
     setId('form');
     setTodoList(todoList.filter((todo) => todo.id !== idValue));
@@ -69,6 +73,7 @@ function App() {
     setRender(returnAbout());
   }
 
+  // Updates which page your on, highlights the current page, and button orientation
   function hideSidebarHandler(page) {
     setId(page);
     setRotate((current) => !current);
