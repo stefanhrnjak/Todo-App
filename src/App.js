@@ -1,5 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 
+import useLocalStorage from "./components/hooks/useLocalStorage";
+
 import Card from "./components/UI/Card";
 import Main from "./components/todos/Main";
 import Sidebar from "./components/sidebar/Sidebar";
@@ -8,7 +10,7 @@ import About from "./components/todos/About.module";
 
 function App() {
   const input = useRef();
-  const [todoList, setTodoList] = useState([]);
+  const [todoList, setTodoList] = useLocalStorage('todos',[]);
   const [render, setRender] = useState(<div>hello</div>);
   const [hideSidebar, setHideSidebar] = useState(false);
   const [rotate, setRotate] = useState(false);
